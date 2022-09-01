@@ -56,7 +56,6 @@
 	}
 
 	async function resetDocument() {
-		// TODO: Dry this out, it's copied from above
 		// We have to manually remove the previous rendered component if we've updated the variables, otherwise... it just doesn't work. Fuck.
 		// if (rendered) {
 		// 	document.getElementById('content')?.remove();
@@ -95,7 +94,8 @@
 	}
 
 	$: {
-		// Create a div child with the id content and append it to article
+		// TODO: This just doesn't work after we interpolate the variables.
+		rendered = undefined;
 		resetDocument();
 		loadData(path);
 		console.log(path);
@@ -109,26 +109,24 @@
 		{/if}
 	</div>
 </article>
-<div>
+<footer>
 	{#if rendered && sectionRef?.scrollHeight > window?.innerHeight}
-		<footer>
-			{#if sectionRef?.scrollTop > 100}
-				<span on:click={scrollToTop}>
-					<IconDoubleCaret circle width="17" height="17" />
-				</span>
-				<span on:click={scrollUp}>
-					<IconCaret circle transform="rotate(180)" />
-				</span>
-			{/if}
-			<span on:click={scrollDown}>
-				<IconCaret circle />
+		{#if sectionRef?.scrollTop > 100}
+			<span on:click={scrollToTop}>
+				<IconDoubleCaret circle width="17" height="17" />
 			</span>
-			<span on:click={scrollToBottom}>
-				<IconDoubleCaret circle width="17" height="17" transform="rotate(180)" />
+			<span on:click={scrollUp}>
+				<IconCaret circle transform="rotate(180)" />
 			</span>
-		</footer>
+		{/if}
+		<span on:click={scrollDown}>
+			<IconCaret circle />
+		</span>
+		<span on:click={scrollToBottom}>
+			<IconDoubleCaret circle width="17" height="17" transform="rotate(180)" />
+		</span>
 	{/if}
-</div>
+</footer>
 
 <style>
 	article {
@@ -141,7 +139,6 @@
 		display: flex;
 		justify-content: center;
 		padding: 0.7rem;
-		margin-top: auto;
 		background-color: var(--background-l1);
 	}
 

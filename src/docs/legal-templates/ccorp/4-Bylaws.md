@@ -1,5 +1,5 @@
 ---
-title: 'ByLaws'
+title: 'Bylaws'
 sidebar_position: 3
 ---
 

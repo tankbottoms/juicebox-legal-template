@@ -28,8 +28,6 @@
 	}
 
 	async function updateVariables() {
-		// await resetDocument();
-		// if (contentRef) {
 		$localVariables.forEach((variable: any) => {
 			if (variable.default) {
 				$documentRef.innerHTML = $documentRef.innerHTML.replace(
@@ -38,7 +36,15 @@
 				);
 			}
 		});
-		// }
+	}
+
+	function save() {
+		const divContents = $documentRef.innerHTML;
+		const prnt = window.open('', '', 'height=500, width=500');
+		const styles = `<head><link rel="stylesheet" href="/global.css" /><link rel="stylesheet" href="/print.css" /><head>`;
+		prnt.document.write(`${styles}${divContents}`);
+		prnt.document.close();
+		prnt.print();
 	}
 
 	onMount(() => {
@@ -58,7 +64,10 @@
 				bind:value={$localVariables[key].default}
 			/>
 		{/each}
-		<Button type="secondary" on:click={updateVariables}>Preview</Button>
+		<div class="buttons">
+			<Button type="secondary" on:click={updateVariables}>Preview</Button>
+			<Button type="primary" on:click={save}>Save as PDF</Button>
+		</div>
 	</div>
 {/if}
 
