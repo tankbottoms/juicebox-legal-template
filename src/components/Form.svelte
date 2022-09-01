@@ -50,8 +50,9 @@
 {/if}
 
 <style>
-    .variables {
-        display: flex;
-        flex-direction: column;
-    }
+	.variables {
+		display: flex;
+		flex-direction: column;
+		margin: 2rem;
+	}
 </style>

@@ -1,0 +1,16 @@
+[
+	{
+		"name": "company-name",
+		"type": "text",
+		"label": "Company Name",
+		"placeholder": "DAOLabs",
+		"value": ""
+	},
+	{
+		"name": "Date-of-adoption",
+		"type": "date",
+		"label": "Date of Adoption",
+		"placeholder": "2022-05-05",
+		"value": ""
+	}
+]
