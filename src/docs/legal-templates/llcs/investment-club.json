@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Investment-Vehicle-Name",
+        "type": "text",
+        "label": "Investment Vehicle Name",
+        "placeholder": "Juicebox",
+        "value": "Juicebox"
+    },
+    {
+        "name": "Subscriber-prospective-members-of-the-project",
+        "type": "text",
+        "label": "Subscriber prospective members of the project",
+        "placeholder": "Banny the Banana",
+        "value": ""
+    },
+    {
+        "name": "Administrative-Member-admin-of-the-project",
+        "type": "text",
+        "label": "Administrative Member admin of the project",
+        "placeholder": "",
+        "value": ""
+    },
+    {
+        "name": "Counsel-associated-with-the-project",
+        "type": "text",
+        "label": "Counsel associated with the project",
+        "placeholder": "",
+        "value": ""
+    },
+    {
+        "name": "Counsel-address-associated-with-the-project",
+        "type": "text",
+        "label": "Counsel address associated with the project",
+        "placeholder": "",
+        "value": ""
+    },
+    {
+        "name": "Counsel-email-associated-with-the-project",
+        "type": "text",
+        "label": "Counsel email associated with the project",
+        "placeholder": "",
+        "value": ""
+    }
+]

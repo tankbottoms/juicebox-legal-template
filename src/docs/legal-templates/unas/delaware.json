@@ -1,0 +1,23 @@
+[
+    {
+        "name": "company-name",
+        "type": "text",
+        "label": "Company Name",
+        "placeholder": "Juicebox DAO",
+        "value": "Juicebox DAO"
+    },
+    {
+        "name": "mission-url",
+        "type": "text",
+        "label": "Mission URL",
+        "placeholder": "https://info.juicebox.money/",
+        "value": "https://info.juicebox.money/"
+    },
+    {
+        "name": "contract-address",
+        "type": "text",
+        "label": "Contract Address",
+        "value": "0xCBB8e16d998161AdB20465830107ca298995f371",
+        "pattern": "^0x[a-fA-F0-9]{40}$"
+    }
+]

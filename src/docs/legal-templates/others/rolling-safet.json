@@ -1,0 +1,31 @@
+[
+	{
+		"name": "company-name",
+		"type": "text",
+		"label": "Company Name",
+		"placeholder": "DAOLabs",
+		"value": ""
+	},
+	{
+		"name": "service-provider-equity-percentage",
+		"type": "number",
+		"label": "Service Provider Equity Percentage",
+		"placeholder": "50",
+		"value": ""
+	},
+	{
+		"name": "safe-equity-percentage",
+		"type": "number",
+		"label": "Safe Equity Percentage",
+		"placeholder": "2",
+		"value": ""
+	},
+	{
+		"name": "erc20-address",
+		"type": "text",
+		"label": "ERC20 Address",
+		"value": "",
+		"pattern": "^0x[a-fA-F0-9]{40}$"
+	},
+	{ "name": "sites-url", "type": "url", "label": "Sites URL", "value": "" }
+]

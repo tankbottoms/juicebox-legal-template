@@ -1,0 +1,15 @@
+# IOU
+
+```
+Variable terms:
+DATE
+BORROWER's NAME
+MAILING ADDRESS
+LENDER'S NAME
+AMOUNT BORROWED
+INTEREST RATE
+AMOUNT
+```
+
+[IOU](iou-form-template.docx)
+
