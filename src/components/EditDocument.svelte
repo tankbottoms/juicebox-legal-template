@@ -1,16 +1,16 @@
 <script>
-	import Document from './Document.svelte';
+	import Document from '$components/Document.svelte';
+	import Form from '$components/Form.svelte';
 	import SplitView from '$components/SplitView.svelte';
 </script>
 
 <SplitView>
 	<div slot="left">
-		<h1>Legal documents</h1>
-		<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+		<Form />
 	</div>
-	<div slot="right" let:rightRef let:dog>
+	<div slot="right" let:rightRef>
 		<h1>Preview</h1>
-		<Document path="/legal-templates/llcs/op-llc-series.md" sectionRef={rightRef} {dog} />
+		<Document path="/legal-templates/llcs/op-llc-series.md" sectionRef={rightRef} />
 	</div>
 </SplitView>
 
