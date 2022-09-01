@@ -39,6 +39,7 @@
 	}
 
 	function save() {
+		updateVariables();
 		const divContents = $documentRef.innerHTML;
 		const prnt = window.open('', '', 'height=500, width=500');
 		const styles = `<head><link rel="stylesheet" href="/global.css" /><link rel="stylesheet" href="/print.css" /><head>`;
