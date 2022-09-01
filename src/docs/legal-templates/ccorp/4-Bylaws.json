@@ -1,6 +1,6 @@
 [
 	{
-		"name": "company-name",
+		"name": "Company-name",
 		"type": "text",
 		"label": "Company Name",
 		"placeholder": "DAOLabs",

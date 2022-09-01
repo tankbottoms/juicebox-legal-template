@@ -4,10 +4,12 @@
 	import IconDoubleCaret from './Icons/IconDoubleCaret.svelte';
 	import './document.css';
 	import { documentRef } from '$stores';
+	import Comp from './Comp.svelte';
 
 	export let path: string;
 	export let sectionRef: HTMLElement;
 	let rendered: any;
+	let renders = 0;
 	let metadata: any;
 	let variables: any;
 
@@ -28,7 +30,6 @@
 	}
 
 	async function loadData(path: string) {
-		rendered = null;
 		// NOTE: The dynamic import *must* have an extension, otherwise it won't load.
 		// Keep this in mind for svx files, i.e. mixed svelte and markdown.
 		const pathWithoutExtension = path.replace(/\.[^/.]+$/, '');
@@ -56,7 +57,15 @@
 
 	async function resetDocument() {
 		// TODO: Dry this out, it's copied from above
+		// We have to manually remove the previous rendered component if we've updated the variables, otherwise... it just doesn't work. Fuck.
+		// if (rendered) {
+		// 	document.getElementById('content')?.remove();
+		// 	const content = document.createElement('div');
+		// 	content.id = 'content';
+		// 	$documentRef?.appendChild(content);
+		// }
 		rendered = undefined;
+		renders += 1;
 		const pathWithoutExtension = path.replace(/\.[^/.]+$/, '');
 		const globs = import.meta.glob('../docs/**/*.{md,svx,json}');
 		// NOTE: this worked locally await import('..docs/' + pathWithoutExtension + '.md');
@@ -86,36 +95,40 @@
 	}
 
 	$: {
+		// Create a div child with the id content and append it to article
+		resetDocument();
 		loadData(path);
 		console.log(path);
 	}
 </script>
 
 <article bind:this={$documentRef}>
-	{#if rendered}
-		<div id="content">
-			<svelte:component this={rendered} />
-		</div>
-	{/if}
-</article>
-{#if rendered && sectionRef?.scrollHeight > window?.innerHeight}
-	<footer>
-		{#if sectionRef?.scrollTop > 100}
-			<span on:click={scrollToTop}>
-				<IconDoubleCaret circle width="17" height="17" />
-			</span>
-			<span on:click={scrollUp}>
-				<IconCaret circle transform="rotate(180)" />
-			</span>
+	<div id="content">
+		{#if rendered}
+			<Comp render={rendered} unique={renders} />
 		{/if}
-		<span on:click={scrollDown}>
-			<IconCaret circle />
-		</span>
-		<span on:click={scrollToBottom}>
-			<IconDoubleCaret circle width="17" height="17" transform="rotate(180)" />
-		</span>
-	</footer>
-{/if}
+	</div>
+</article>
+<div>
+	{#if rendered && sectionRef?.scrollHeight > window?.innerHeight}
+		<footer>
+			{#if sectionRef?.scrollTop > 100}
+				<span on:click={scrollToTop}>
+					<IconDoubleCaret circle width="17" height="17" />
+				</span>
+				<span on:click={scrollUp}>
+					<IconCaret circle transform="rotate(180)" />
+				</span>
+			{/if}
+			<span on:click={scrollDown}>
+				<IconCaret circle />
+			</span>
+			<span on:click={scrollToBottom}>
+				<IconDoubleCaret circle width="17" height="17" transform="rotate(180)" />
+			</span>
+		</footer>
+	{/if}
+</div>
 
 <style>
 	article {

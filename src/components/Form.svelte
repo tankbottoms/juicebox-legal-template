@@ -3,10 +3,11 @@
 	import { writable } from 'svelte/store';
 	import Button from './Button.svelte';
 	import Input from './Input.svelte';
+	import { variables, documentRef } from '$stores';
 
 	export let path;
 	export let name;
-	let variables;
+	let localVariables;
 
 	async function loadData(path: string) {
 		// NOTE: The dynamic import *must* have an extension, otherwise it won't load.
@@ -18,14 +19,26 @@
 		// Looks insane.
 		let importedVariables: any;
 		try {
-			console.log(pathWithoutExtension);
-			console.log(globs);
 			importedVariables = await globs?.[`../docs/${pathWithoutExtension}.json`]();
 			// TODO: add a value key to the importedVariables object.
-			variables = writable(importedVariables.default);
+			localVariables = writable(importedVariables.default);
 		} catch (e) {
 			console.info('No variables found for this page.');
 		}
+	}
+
+	async function updateVariables() {
+		// await resetDocument();
+		// if (contentRef) {
+		$localVariables.forEach((variable: any) => {
+			if (variable.default) {
+				$documentRef.innerHTML = $documentRef.innerHTML.replace(
+					new RegExp(`\\[${variable.name}\\]`, 'g'),
+					variable.default
+				);
+			}
+		});
+		// }
 	}
 
 	onMount(() => {
@@ -33,19 +46,19 @@
 	});
 </script>
 
-{#if variables}
+{#if $localVariables}
 	<div class="variables">
-		{#each Object.keys($variables) as key}
+		{#each Object.keys($localVariables) as key}
 			<Input
-				{...$variables[key]}
-				label={$variables[key].label}
-				type={$variables[key].type}
-				name={$variables[key].name}
-				placeholder={$variables[key].placeholder}
-				bind:value={$variables[key].default}
+				{...$localVariables[key]}
+				label={$localVariables[key].label}
+				type={$localVariables[key].type}
+				name={$localVariables[key].name}
+				placeholder={$localVariables[key].placeholder}
+				bind:value={$localVariables[key].default}
 			/>
 		{/each}
-		<!-- <Button on:click={updateVariables}>Update document</Button> -->
+		<Button type="secondary" on:click={updateVariables}>Preview</Button>
 	</div>
 {/if}
 
