@@ -15,7 +15,6 @@
 	main {
 		box-sizing: border-box;
 		margin-bottom: 40px;
-		max-width: 1440px;
 		display: flex;
 		width: 100vw;
 		height: 100vh;

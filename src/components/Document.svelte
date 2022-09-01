@@ -6,7 +6,6 @@
 
 	export let path: string;
 	export let sectionRef: HTMLElement;
-	export let dog: string;
 	let rendered: any;
 	let metadata: any;
 	let variables: any;
@@ -136,5 +135,6 @@
 		max-width: 850px;
 		padding: 0rem 2rem;
 		word-break: break-word;
+        margin: 0 auto;
 	}
 </style>

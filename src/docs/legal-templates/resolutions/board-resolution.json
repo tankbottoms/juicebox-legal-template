@@ -1,0 +1,30 @@
+[
+	{
+		"name": "Corporation-name",
+		"type": "text",
+		"label": "Corporation Name",
+		"placeholder": "Juicebox Corporation",
+		"value": "Juicebox Corporation"
+	},
+	{
+		"name": "Corporation-state",
+		"type": "text",
+		"label": "Corporation State",
+		"placeholder": "Delaware",
+		"value": "Delaware"
+	},
+	{
+		"name": "Agreement-name",
+		"type": "text",
+		"label": "Agreement Name",
+		"placeholder": "Employment Agreements",
+		"value": "Employment Agreements"
+	},
+	{
+		"name": "Director-Shareholder-printed-name",
+		"type": "text",
+		"label": "Director or Shareholder Printed Name",
+		"placeholder": "Mr. Banny Banana",
+		"value": "Mr. Banny Banana"
+	}
+]

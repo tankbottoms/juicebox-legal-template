@@ -1,6 +1,6 @@
 ---
 title: 'Definitions'
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 **A "51% attack"** is a type of attack on a decentralized network whereby a group gains control of the majority of nodes. A 51% attack would such a group to defraud the blockchain by reversing transactions and "double spending" Ether and other tokens.

@@ -1,34 +1,39 @@
-# [company-name] CONSULTING AGREEMENT
+---
+title: 'Consulting Agreement'
+sidebar_position: 14
+---
+
+# [Company-name] CONSULTING AGREEMENT
 
 ```
 Note: Exhibit A section 3 has multiple options (flat vs. hourly, options, etc.) and should be reviewed
 
 Variable terms:
-company-name
-consultant-name
-consultant-address
-consultant-title
-contact-name
-contact-role
-contact-email
-effective-date
-consultant-services
-pay-amount
-deliverable
-hourly-rate
-max-weekly-hours
-shares-amount
-vesting-years
-plan-year
-exhibit-a-date
-service-provider-name
-service-provider-relation
-service-provider-title
-signer-name
-signer-title
+Company-name
+Consultant-name
+Consultant-address
+Consultant-title
+Contact-name
+Contact-role
+Contact-email
+Effective-date
+Consultant-services
+Pay-amount
+Deliverable
+Hourly-rate
+Max-weekly-hours
+Shares-amount
+Vesting-years
+Plan-year
+Exhibit-a-date
+Service-provider-name
+Service-provider-relation
+Service-provider-title
+Signer-name
+Signer-title
 ```
 
-This Consulting Agreement (this "**_Agreement_**") is made and entered into as of [effective-date] (the "**_Effective Date_**"), by and between [company-name], a Delaware corporation (the "**_Company_**"), and [consultant-name], an individual with his/her principal place of business at [consultant-address] ("**_Consultant_**") (each herein referred to individually as a "**_Party_**," or collectively as the "**_Parties_**").
+This Consulting Agreement (this "**_Agreement_**") is made and entered into as of [Effective-date] (the "**_Effective Date_**"), by and between [Company-name], a Delaware corporation (the "**_Company_**"), and [Consultant-name], an individual with his/her principal place of business at [Consultant-address] ("**_Consultant_**") (each herein referred to individually as a "**_Party_**," or collectively as the "**_Parties_**").
 
 The Company desires to retain Consultant as an independent contractor to perform consulting services for the Company, and Consultant is willing to perform such services, on the terms described below. In consideration of the mutual promises contained herein, the Parties agree as follows:
 
@@ -42,8 +47,8 @@ Consultant agrees that if and to the extent that Consultant provided any service
 
 - (i) Consultant received access to any information from or on behalf of Company that would have been "Confidential Information" (as defined below) if Consultant received access to such information during the term of this Agreement; or
 - (ii) Consultant
-> - (a) conceived, created, authored, invented, developed or reduced to practice any item (including any intellectual property rights with respect thereto) on behalf of or for the benefit of Company, or related to the current or prospective business of Company in anticipation of Consultant's involvement with Company, that would have been an "Invention" (as defined below) if conceived, created, authored, invented, developed or reduced to practice during the term of this Agreement; or
-> - (b) incorporated into any such item any pre-existing invention, improvement, development, concept, discovery or other proprietary information that would have been a "Prior Invention" (as defined below) if incorporated into such item during the term of this Agreement; then any such information shall be deemed "Confidential Information" hereunder and any such item shall be deemed an "Invention" or "Prior Invention" hereunder, and this Agreement shall apply to such activities, information or item as if disclosed, conceived, created, authored, invented, developed or reduced to practice during the term of this Agreement. Consultant further acknowledges that Consultant has been fully compensated for all services provided during any such Prior Consulting Period.
+  > - (a) conceived, created, authored, invented, developed or reduced to practice any item (including any intellectual property rights with respect thereto) on behalf of or for the benefit of Company, or related to the current or prospective business of Company in anticipation of Consultant's involvement with Company, that would have been an "Invention" (as defined below) if conceived, created, authored, invented, developed or reduced to practice during the term of this Agreement; or
+  > - (b) incorporated into any such item any pre-existing invention, improvement, development, concept, discovery or other proprietary information that would have been a "Prior Invention" (as defined below) if incorporated into such item during the term of this Agreement; then any such information shall be deemed "Confidential Information" hereunder and any such item shall be deemed an "Invention" or "Prior Invention" hereunder, and this Agreement shall apply to such activities, information or item as if disclosed, conceived, created, authored, invented, developed or reduced to practice during the term of this Agreement. Consultant further acknowledges that Consultant has been fully compensated for all services provided during any such Prior Consulting Period.
 
 ## 3. Confidentiality.
 
@@ -153,12 +158,12 @@ _signature page follows_
 
 IN WITNESS WHEREOF, the Parties hereto have executed this Consulting Agreement as of the date first written above.
 
-|**CONSULTANT:**|**[company-name]:**|
-|-|-|
-|By: `________________________`|By: `________________________`|
-|Name: [consultant-name]|Name: [signer-name]|
-|Title: [consultant-title]|Title: [signer-title]|
-|Address for Notice: [consultant-address]||
+| **CONSULTANT:**                          | **[Company-name]:**            |
+| ---------------------------------------- | ------------------------------ |
+| By: `________________________`           | By: `________________________` |
+| Name: [Consultant-name]                  | Name: [Signer-name]            |
+| Title: [Consultant-title]                | Title: [Signer-title]          |
+| Address for Notice: [Consultant-address] |                                |
 
 ## EXHIBIT A
 
@@ -166,59 +171,59 @@ IN WITNESS WHEREOF, the Parties hereto have executed this Consulting Agreement a
 
 1.  **_Contact._** Consultant's principal Company contact:
 
-Name: [contact-name]
+Name: [Contact-name]
 
-Role: [contact-role]
+Role: [Contact-role]
 
-Email: [contact-email]
+Email: [Contact-email]
 
 2.  **_Services_**. The Services will include, but will not be limited to, the following:
 
-[consultant-services] and such other services that the Company may reasonably request from time to time.
+[Consultant-services] and such other services that the Company may reasonably request from time to time.
 
 3.  **_Compensation._**
 
-A. The Company will pay Consultant $[pay-amount] upon delivery by the Consultant and acceptance by the Company of [deliverable], as described in Article 2 above.
+A. The Company will pay Consultant $[Pay-amount] upon delivery by the Consultant and acceptance by the Company of [Deliverable], as described in Article 2 above.
 
 **OR**
 
-A. The Company will pay Consultant $[hourly-rate] per hour, except that Consultant will not be paid for more than [max-weekly-hours] hours per week.
+A. The Company will pay Consultant $[Hourly-rate] per hour, except that Consultant will not be paid for more than [Max-weekly-hours] hours per week.
 
 B. The Company will reimburse Consultant, in accordance with Company policy, for all reasonable expenses incurred by Consultant in performing the Services pursuant to this Agreement, if Consultant receives written consent from an authorized agent of the Company prior to incurring such expenses and submits receipts for such expenses to the Company in accordance with Company policy.
 
 **AND/OR**
 
-C. Subject to the approval of the Company's Board of Directors, the Company will grant Consultant a nonqualified stock option to purchase [shares-amount] shares of the Company's Common Stock (the "**Shares**") at a price per share equal to the fair market value per share of the Common Stock on the date of grant, as determined by the Company's Board of Directors. Shares will vest monthly in equal amounts over [vesting-years] years after the date Consultant's vesting begins, subject to Consultant continuing to provide Services to the Company pursuant to this Agreement, and no shares shall vest before such date and no rights to any vesting shall be earned or accrued prior to such date. The Shares will be subject to the terms and conditions of the Company's [plan-year] Equity Incentive Plan and a stock option agreement between Consultant and the Company, including vesting requirements.
+C. Subject to the approval of the Company's Board of Directors, the Company will grant Consultant a nonqualified stock option to purchase [Shares-amount] shares of the Company's Common Stock (the "**Shares**") at a price per share equal to the fair market value per share of the Common Stock on the date of grant, as determined by the Company's Board of Directors. Shares will vest monthly in equal amounts over [Vesting-years] years after the date Consultant's vesting begins, subject to Consultant continuing to provide Services to the Company pursuant to this Agreement, and no shares shall vest before such date and no rights to any vesting shall be earned or accrued prior to such date. The Shares will be subject to the terms and conditions of the Company's [Plan-year] Equity Incentive Plan and a stock option agreement between Consultant and the Company, including vesting requirements.
 
 Every two weeks, Consultant shall submit to the Company a written invoice for Services and expenses, and such statement shall be subject to the approval of the contact person listed above or other designated agent of the Company. The Company will remit payment for properly submitted and approved invoices within thirty (30) days following invoice submission.
 
 All payments and benefits provided for under this Agreement are intended to be exempt from or otherwise comply with the requirements of Section 409A of the Internal Revenue Code of 1986, as amended, and the regulations and guidance thereunder (together, "**Section 409A**") so that none of the severance payments and benefits to be provided hereunder will be subject to the additional tax imposed under Section 409A, and any ambiguities or ambiguous terms herein will be interpreted to be exempt or so comply. Each payment and benefit payable under this Agreement is intended to constitute a separate payment for purposes of Section 1.409A-2(b)(2) of the Treasury Regulations.
 
-This **Exhibit A** is accepted and agreed upon as of [exhibit-a-date].
+This **Exhibit A** is accepted and agreed upon as of [Exhibit-a-date].
 
-|**CONSULTANT:**|**[company-name]:**|
-|-|-|
-|By: `________________________`|By: `________________________`|
-|Name: [consultant-name]|Name: [signer-name]|
-|Title: [consultant-title]|Title: [signer-title]|
+| **CONSULTANT:**                | **[Company-name]:**            |
+| ------------------------------ | ------------------------------ |
+| By: `________________________` | By: `________________________` |
+| Name: [Consultant-name]        | Name: [Signer-name]            |
+| Title: [Consultant-title]      | Title: [Signer-title]          |
 
 ## EXHIBIT B
 
 **FORM OF CONFIDENTIAL INFORMATION AND ASSIGNMENT AGREEMENT**
 
-(*Attached*)
+(_Attached_)
 
 CONFIDENTIAL INFORMATION AND ASSIGNMENT AGREEMENT
 
-This Confidential Information and Assignment Agreement (this "**_Agreement_**") is entered into as of [effective-date], by and between [consultant-name] ("**_Consultant_**") and [service-provider-name] ("**_Service Provider_**"), [service-provider-relation] of Consultant.
+This Confidential Information and Assignment Agreement (this "**_Agreement_**") is entered into as of [Effective-date], by and between [Consultant-name] ("**_Consultant_**") and [Service-provider-name] ("**_Service Provider_**"), [Service-provider-relation] of Consultant.
 
 ### RECITALS
 
-A. The Consultant and [company-name], a Delaware corporation (the "**_Company_**"), have entered into a Consulting Agreement, dated [effective-date] (the "**_Consulting Agreement_**").
+A. The Consultant and [Company-name], a Delaware corporation (the "**_Company_**"), have entered into a Consulting Agreement, dated [Effective-date] (the "**_Consulting Agreement_**").
 
 B. Article 5 of the Consulting Agreement requires Consultant to have each of Consultant's employees and contractors with access to Confidential Information (as defined below) execute this Agreement.
 
-C. Service Provider is [service-provider-relation] of Consultant, who is performing for the Company the services, or a portion of the services, described in **Exhibit A** of the Consulting Agreement (the "**_Services_**").
+C. Service Provider is [Service-provider-relation] of Consultant, who is performing for the Company the services, or a portion of the services, described in **Exhibit A** of the Consulting Agreement (the "**_Services_**").
 
 D. Capitalized terms used but not defined in this Agreement shall have the meanings assigned to them in the Consulting Agreement.
 
@@ -264,8 +269,8 @@ IN WITNESS WHEREOF, the parties hereto have executed this Confidential Informati
 
 |**SERVICE PROVIDER:**|**CONSULTANT:**|
 |By: `________________________`|By: `________________________`|
-|Name: [service-provider-name]|Name: [consultant-name]|
-|Title: [service-provider-title]|Title: Consultant|
+|Name: [Service-provider-name]|Name: [Consultant-name]|
+|Title: [Service-provider-title]|Title: Consultant|
 
 ## EXHIBIT C
 

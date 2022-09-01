@@ -25,9 +25,10 @@ const dir = './src/docs';
 const filterFormats = ['doc', 'docx', 'pdf', 'DS_Store'];
 
 type Leaf = {
+	label: string;
 	leaf: string;
 	position: number;
-}
+};
 
 type RouteItem = {
 	label: string;
@@ -74,7 +75,6 @@ function recursiveCreateRoutes(path: string, fullPath = ''): RouteItem[] {
 	for (const file of files) {
 		const filePath = `${path}/${file}`;
 		const stats = fs.statSync(filePath);
-
 		if (filterFormats.includes(file.split('.')[1])) continue;
 
 		if (stats.isDirectory()) {
@@ -82,6 +82,7 @@ function recursiveCreateRoutes(path: string, fullPath = ''): RouteItem[] {
 			try {
 				categoryJson = readCategoryJson(`${filePath}/_category_.json`);
 			} catch (e) {
+				console.info('NOTE: No category json found for', filePath);
 				continue;
 			}
 			// Check if the category has a README.md
@@ -102,13 +103,17 @@ function recursiveCreateRoutes(path: string, fullPath = ''): RouteItem[] {
 			for (const newItem of items) {
 				if (typeof newItem === 'string') {
 					const frontmatter = readMarkdownFrontmatter(`${path}/${item.path}/${newItem}`);
-					item.leaves.push({ leaf: newItem, position: Number(frontmatter.sidebar_position) });
+					item.leaves.push({
+						leaf: newItem,
+						label: frontmatter.title && frontmatter.title.replaceAll("'", ''),
+						position: Number(frontmatter.sidebar_position)
+					});
 				} else {
 					item.items.push(newItem);
 				}
 			}
-			item.leaves.sort((a, b) => a.position - b.position);
-			item.items.sort((a, b) => a.position - b.position);
+			item.leaves = item.leaves.sort((a, b) => Number(a.position) - Number(b.position));
+			item.items = item.items.sort((a, b) => Number(a.position) - Number(b.position));
 			routes.push(item);
 		} else {
 			if (file.endsWith('.json')) {
@@ -122,7 +127,7 @@ function recursiveCreateRoutes(path: string, fullPath = ''): RouteItem[] {
 
 const routes = recursiveCreateRoutes(dir);
 const sortedRoutes = routes.sort((a: RouteItem, b: RouteItem) => {
-	return a.position - b.position;
+	return Number(a.position) - Number(b.position);
 });
 
 fs.writeFileSync('./src/docs.json', JSON.stringify(sortedRoutes, null, 2));

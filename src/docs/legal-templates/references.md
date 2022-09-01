@@ -1,6 +1,6 @@
 ---
-title: "References"
-sidebar_position: 7
+title: 'References'
+sidebar_position: 9
 ---
 
 :::info
@@ -15,7 +15,7 @@ Below are online resources we found helpful preparing this information, addition
 - [Declaration of Trust](./Resources/trusts/declaration-of-trust.md)
 - [Trust Model Act](https://www.uniformlaws.org/committees/community-home?CommunityKey=193ff839-7955-4846-8f3c-ce74ac23938d)
 
-### Loans (Promissory Notes)
+### Promissory Notes
 
 - [IOU Template](./Resources/loans/iou-template.md)
 - [Note Template](./Resources/loans/note-template.md)

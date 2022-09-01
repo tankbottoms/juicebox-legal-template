@@ -1,12 +1,12 @@
 <script>
 	import Document from '$components/Document.svelte';
-	import Form from '$components/Form.svelte';
 	import SplitView from '$components/SplitView.svelte';
+	import LeftPanel from './LeftPanel.svelte';
 </script>
 
 <SplitView>
 	<div slot="left">
-		<Form />
+		<LeftPanel />
 	</div>
 	<div slot="right" let:rightRef>
 		<h1>Preview</h1>

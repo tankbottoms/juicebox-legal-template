@@ -1,13 +1,11 @@
 ---
-title: "Your Project"
-sidebar_position: 1
+title: 'Your Juicebox Project'
+sidebar_position: 3
 ---
 
 :::info
 NONE OF THE INFORMATION, SERVICES OR MATERIALS OFFERED ON OUR SITE CONSTITUTE, AND ARE NOT INTENDED TO CONSTITUTE, LEGAL, FINANCIAL, TAX, INVESTMENT OR OTHER ADVICE, AND YOU SHOULD NOT ACT OR REFRAIN FROM ACTING BASED ON ANY INFORMATION, SERVICES OR MATERIALS PROVIDED ON THIS SITE.
 :::
-
-## Introduction
 
 This page recommends you prepare a worksheet about your project, to describe generally what you may need to evaluate how best to configure your treasury. Not only will this information help define how the project will operate, but may prove invaluable in navigating future decision trees.
 

@@ -9,11 +9,11 @@ counterparty-name
 counterparty-entity
 ```
 
-The undersigned, being the sole member of the board of directors (the ***“Board”***) and the sole shareholder of [company-name], a Washington corporation (the ***“Company”***), acting pursuant to RCW 23B.08.210 and RCW 23B.07.040 without the necessity of formal meetings, hereby waive all notices, statutory and otherwise, and DOES HEREBY UNANIMOUSLY ADOPT the following resolutions and DOES HEREBY UNANIMOUSLY CONSENT to the taking of the actions therein set forth: 
+The undersigned, being the sole member of the board of directors (the **_“Board”_**) and the sole shareholder of [company-name], a Washington corporation (the **_“Company”_**), acting pursuant to RCW 23B.08.210 and RCW 23B.07.040 without the necessity of formal meetings, hereby waive all notices, statutory and otherwise, and DOES HEREBY UNANIMOUSLY ADOPT the following resolutions and DOES HEREBY UNANIMOUSLY CONSENT to the taking of the actions therein set forth:
 
 ## Approval of Various Agreements
 
-WHEREAS, certain officers of the Company have caused to be prepared and negotiated two Intercompany Agreements between the Company and [counterparty-name], a [counterparty-entity] (the "***Counterparty***"), in substantially the form of attached **Exhibit A** (the "***Outbound Agreement***") and **Exhibit B** (the "***Inbound Agreement***" and, together with the Outbound Agreement, the "***Intercompany Agreements***"); and
+WHEREAS, certain officers of the Company have caused to be prepared and negotiated two Intercompany Agreements between the Company and [counterparty-name], a [counterparty-entity] (the "**_Counterparty_**"), in substantially the form of attached **Exhibit A** (the "**_Outbound Agreement_**") and **Exhibit B** (the "**_Inbound Agreement_**" and, together with the Outbound Agreement, the "**_Intercompany Agreements_**"); and
 
 WHEREAS, pursuant to the Outbound Agreement, employees and consultants of the Company will provide, effective as of June 1, 2022, certain services to the Counterparty related to administrative assistance, development agreements and other matters and, pursuant to the Inbound Agreement, employees and consultants of the Counterparty will provide, effective as of June 1, 2022, certain services to Dot related to administrative assistance, development agreements and other matters; and
 
@@ -31,11 +31,11 @@ WHEREAS, the Board deems it to be in the best interests of the Company and its s
 
 Execution and delivery of this Consent by facsimile transmission shall be deemed for all purposes to be due execution and delivery by the signing director and shareholder.
 
-|**SOLE DIRECTOR AND SHAREHOLDER:**|
-|-|
-|Signature: `________________________`|
-|Print Name: [director-name]|
-|Dated: [date]|
+| **SOLE DIRECTOR AND SHAREHOLDER:**    |
+| ------------------------------------- |
+| Signature: `________________________` |
+| Print Name: [director-name]           |
+| Dated: [date]                         |
 
 ## Exhibit A
 

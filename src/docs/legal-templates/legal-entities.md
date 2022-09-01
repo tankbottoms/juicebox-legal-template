@@ -1,6 +1,6 @@
 ---
-title: "Project IRL Types"
-sidebar_position: 3
+title: 'Project IRL Patterns'
+sidebar_position: 4
 ---
 
 :::info

@@ -2,8 +2,6 @@
 title: Loans
 ---
 
-# Loans
-
 Loans, also called Promissory Notes, are usually for money but can also be for property. The basic premise is that the agreement is to repay the lender, depending on the jurisdiction, the interest that is legal may differ however there are little limitations to the duration and repayment terms. The term secured, and non-recourse, are particular to the rights the lender may have if the borrower is unable to repay.
 
 Secured means that the loan is secured by some type of collateral, such as a piece of property or asset, like an NFT. Unsecured means that you have no right to any property or collateral even if the loaned funds were used to purchase it. Usually, loans which are unsecured carry higher interest rates.

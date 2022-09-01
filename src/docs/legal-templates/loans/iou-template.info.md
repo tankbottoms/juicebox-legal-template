@@ -12,4 +12,3 @@ AMOUNT
 ```
 
 [IOU](iou-form-template.docx)
-

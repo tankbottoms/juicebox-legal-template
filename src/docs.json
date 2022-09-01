@@ -7,129 +7,95 @@
     "leaves": [
       {
         "leaf": "README.md",
-        "position": 1
-      },
-      {
-        "leaf": "definitions.md",
+        "label": "Legal Templates",
         "position": 1
       },
       {
         "leaf": "disclaimers.md",
+        "label": "Disclaimers",
         "position": 1
       },
       {
-        "leaf": "your-project.md",
-        "position": 1
-      },
-      {
-        "leaf": "law-and-you.md",
+        "leaf": "definitions.md",
+        "label": "Definitions",
         "position": 2
       },
       {
-        "leaf": "legal-entities.md",
+        "leaf": "law-and-you.md",
+        "label": "Juicebox Ecosystem",
         "position": 3
       },
       {
-        "leaf": "operating-business.md",
+        "leaf": "your-project.md",
+        "label": "Your Juicebox Project",
+        "position": 3
+      },
+      {
+        "leaf": "legal-entities.md",
+        "label": "Project IRL Patterns",
         "position": 4
       },
       {
-        "leaf": "securities.md",
+        "leaf": "operating-business.md",
+        "label": "For-Profit",
         "position": 5
       },
       {
-        "leaf": "references.md",
-        "position": 7
+        "leaf": "securities.md",
+        "label": "Securities",
+        "position": 6
       },
       {
         "leaf": "faq.md",
-        "position": 11
+        "label": "FAQs",
+        "position": 8
+      },
+      {
+        "leaf": "references.md",
+        "label": "References",
+        "position": 9
       }
     ],
     "items": [
       {
-        "label": "C-Corporations",
-        "path": "ccorp",
+        "label": "Terms of Service",
+        "position": 10,
+        "path": "tos",
         "hasRootDoc": true,
         "leaves": [
           {
-            "leaf": "EXAMPLE-11-Indemnification-Agreement-Delaware-Corporation-Founder-01.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-12-201__-Equity-Incentive-Plan.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-13-Form-of-Stock-Option-Agreement.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-14-Action-by-Written-Consent-of-Stockholders.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-15-Form-of-At-Will-Employment-Agreement.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-16-Form-of-Consulting-Agreement-Individual.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-17-Form-of-Consulting-Agreement-Corporation.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-18-Form-of-Non-Disclosure-Agreement-Discloser.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-19-Form-of-Non-Disclosure-Agreement-Mutual.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-2-Certificate-of-Incorporation.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-3-Action-by-Sole-Incorporator.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-4-Bylaws.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-5-Certificate-of-Adoption-of-Bylaws.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-6-Board-Action-in-Lieu-of-First-Meeting.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-8-Restricted-Stock-Purchase-Agreement-Founder-01.md",
-            "position": null
-          },
-          {
-            "leaf": "EXAMPLE-9-Common-Stock-Purchase-Agreement-Purchaser.md",
-            "position": null
-          },
-          {
             "leaf": "README.md",
+            "position": null
+          },
+          {
+            "leaf": "acceptable-use.md",
+            "position": 1
+          },
+          {
+            "leaf": "privacy-policy.md",
+            "position": 3
+          },
+          {
+            "leaf": "tos-complex.md",
+            "position": null
+          },
+          {
+            "leaf": "tos-simple.md",
+            "label": "Terms and Conditions",
             "position": null
           }
         ],
         "items": []
       },
       {
-        "label": "Loans",
+        "label": "Promissory Notes",
+        "position": 12,
         "path": "loans",
         "hasRootDoc": true,
         "leaves": [
           {
             "leaf": "README.md",
+            "label": "Loans",
             "position": null
           },
           {
@@ -138,6 +104,7 @@
           },
           {
             "leaf": "iou-template.md",
+            "label": "I OWE YOU (IOU)",
             "position": null
           },
           {
@@ -156,17 +123,195 @@
         "items": []
       },
       {
-        "label": "Other Legal Agreements",
-        "path": "others",
+        "label": "Trusts",
+        "position": 13,
+        "path": "trusts",
         "hasRootDoc": true,
         "leaves": [
           {
             "leaf": "README.md",
+            "label": "Trusts",
             "position": null
           },
           {
-            "leaf": "acceptable-use.md",
+            "leaf": "trust.md",
+            "label": "Trust Agreement",
             "position": 1
+          },
+          {
+            "leaf": "declaration-of-trust.md",
+            "label": "Declaration of Trust",
+            "position": 2
+          }
+        ],
+        "items": []
+      },
+      {
+        "label": "Unincorporated",
+        "position": 13,
+        "path": "unas",
+        "hasRootDoc": true,
+        "leaves": [
+          {
+            "leaf": "README.md",
+            "label": "Unincorporated Non-Profit Agreement",
+            "position": null
+          },
+          {
+            "leaf": "delaware.md",
+            "label": "Delaware UNA Agreement",
+            "position": 1
+          },
+          {
+            "leaf": "nevada.info.md",
+            "label": "Nevada Unincorporated Non-Profit Association Info",
+            "position": 1
+          },
+          {
+            "leaf": "nevada.md",
+            "label": "Nevada Non-Profit",
+            "position": 1
+          }
+        ],
+        "items": []
+      },
+      {
+        "label": "Corporations",
+        "position": 14,
+        "path": "ccorp",
+        "hasRootDoc": true,
+        "leaves": [
+          {
+            "leaf": "2-Certificate-of-Incorporation.md",
+            "label": "Incorporate",
+            "position": 1
+          },
+          {
+            "leaf": "3-Action-by-Sole-Incorporator.md",
+            "label": "Incorporator, Action",
+            "position": 2
+          },
+          {
+            "leaf": "4-Bylaws.md",
+            "label": "ByLaws",
+            "position": 3
+          },
+          {
+            "leaf": "5-Certificate-of-Adoption-of-Bylaws.md",
+            "label": "ByLaws, Adoption",
+            "position": 5
+          },
+          {
+            "leaf": "6-Board-Action-in-Lieu-of-First-Meeting.md",
+            "label": "Consent of Directors",
+            "position": 6
+          },
+          {
+            "leaf": "8-Restricted-Stock-Purchase-Agreement-Founder-01.md",
+            "label": "Founder Stock Agreement",
+            "position": 7
+          },
+          {
+            "leaf": "9-Common-Stock-Purchase-Agreement-Purchaser.md",
+            "label": "Common Stock Agreement",
+            "position": 8
+          },
+          {
+            "leaf": "11-Indemnification-Agreement-Delaware-Corporation-Founder.md",
+            "label": "Indemnification",
+            "position": 9
+          },
+          {
+            "leaf": "12-201__-Equity-Incentive-Plan.md",
+            "label": "Equity Incentives",
+            "position": 10
+          },
+          {
+            "leaf": "13-Form-of-Stock-Option-Agreement.md",
+            "label": "Stock Options",
+            "position": 11
+          },
+          {
+            "leaf": "14-Action-by-Written-Consent-of-Stockholders.md",
+            "label": "Shareholder Consent",
+            "position": 12
+          },
+          {
+            "leaf": "15-Form-of-At-Will-Employment-Agreement.md",
+            "label": "At-will Employment",
+            "position": 13
+          },
+          {
+            "leaf": "16-Form-of-Consulting-Agreement-Individual.md",
+            "label": "Consulting Agreement",
+            "position": 14
+          },
+          {
+            "leaf": "17-Form-of-Consulting-Agreement-Corporation.md",
+            "label": "Consulting Agreement",
+            "position": 15
+          },
+          {
+            "leaf": "18-Form-of-Non-Disclosure-Agreement-Discloser.md",
+            "label": "NDA, Disclosing",
+            "position": 16
+          },
+          {
+            "leaf": "19-Form-of-Non-Disclosure-Agreement-Mutual.md",
+            "label": "NDA, Mutual",
+            "position": 17
+          },
+          {
+            "leaf": "README.md",
+            "label": "C Corporations",
+            "position": null
+          }
+        ],
+        "items": []
+      },
+      {
+        "label": "LLC",
+        "position": 15,
+        "path": "llcs",
+        "hasRootDoc": true,
+        "leaves": [
+          {
+            "leaf": "LLC-standalone.md",
+            "position": null
+          },
+          {
+            "leaf": "README.md",
+            "label": "LLC",
+            "position": null
+          },
+          {
+            "leaf": "investment-club.info.md",
+            "label": "Investment Club Additional Information",
+            "position": 2
+          },
+          {
+            "leaf": "investment-club.md",
+            "label": "Investment Club LLC",
+            "position": 2
+          },
+          {
+            "leaf": "operating-agreement-investment-club-series-LLC.md",
+            "label": "Series LLC",
+            "position": 3
+          }
+        ],
+        "items": []
+      },
+      {
+        "label": "Resolutions",
+        "position": 15,
+        "path": "resolutions",
+        "hasRootDoc": true,
+        "leaves": [
+          {
+            "leaf": "README.md",
+            "label": "Resolutions",
+            "position": null
           },
           {
             "leaf": "banking-resolution.md",
@@ -178,11 +323,26 @@
           },
           {
             "leaf": "board-resolution.md",
+            "label": "Board Resolution",
             "position": 3
           },
           {
-            "leaf": "privacy-policy.md",
-            "position": 3
+            "leaf": "shareholder-resolution.md",
+            "position": null
+          }
+        ],
+        "items": []
+      },
+      {
+        "label": "Tokens",
+        "position": 17,
+        "path": "tokens",
+        "hasRootDoc": true,
+        "leaves": [
+          {
+            "leaf": "README.md",
+            "label": "Tokens",
+            "position": null
           },
           {
             "leaf": "saft.md",
@@ -193,54 +353,22 @@
             "position": 4
           },
           {
-            "leaf": "rolling-safet-ex-a.md",
+            "leaf": "rolling-SAFE-template-exhibits.md",
             "position": 5
-          },
-          {
-            "leaf": "shareholder-resolution.md",
-            "position": null
           }
         ],
         "items": []
       },
       {
-        "label": "Non-Profit Associations",
-        "position": 1,
-        "path": "unas",
+        "label": "Research",
+        "position": 18,
+        "path": "research",
         "hasRootDoc": true,
         "leaves": [
           {
             "leaf": "README.md",
+            "label": "Research",
             "position": null
-          },
-          {
-            "leaf": "delaware.md",
-            "position": 1
-          },
-          {
-            "leaf": "una-parts.md",
-            "position": 2
-          }
-        ],
-        "items": []
-      },
-      {
-        "label": "Trusts",
-        "position": 4,
-        "path": "trusts",
-        "hasRootDoc": true,
-        "leaves": [
-          {
-            "leaf": "README.md",
-            "position": null
-          },
-          {
-            "leaf": "trust.md",
-            "position": 1
-          },
-          {
-            "leaf": "declaration-of-trust.md",
-            "position": 2
           }
         ],
         "items": []

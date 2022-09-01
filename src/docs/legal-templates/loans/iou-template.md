@@ -1,18 +1,20 @@
-# I OWE YOU (IOU)
+---
+title: I OWE YOU (IOU)
+---
 
 ### 1. THE PARTIES.
 
 This I Owe You made on [DATE], is by and between:
 
-Borrower: [BORROWER'S NAME] with a mailing address of [MAILING ADDRESS] (“Borrower”), and
+Borrower: [BORROWER'S NAME] with a mailing address of [MAILING ADDRESS](“Borrower”), and
 
-Lender: [LENDER'S NAME] with a mailing address of [MAILING ADDRESS] (“Lender”).
+Lender: [LENDER'S NAME] with a mailing address of [MAILING ADDRESS](“Lender”).
 
 ### 2. LOAN TERMS.
 
 The Lender agrees to lend the Borrower under the following terms:
 
-a. Principal Amount: $[AMOUNT BORROWED]
+a. Principal Amount: \$[AMOUNT BORROWED]
 
 b. Interest Rate: [INTEREST RATE]% compounded per: (check one)
 
@@ -30,9 +32,9 @@ Hereinafter known as the “Borrowed Money.”
 
 The full balance of the Borrowed Money, including all accrued interest and any other fees or penalties, is due and payable in: (check one)
 
-☐ - A LUMP SUM. The Borrower shall repay the Borrowed Money as a lump sum, in full, in the amount of $[AMOUNT] (principal and interest) by [DATE] (“Due Date”).
+☐ - A LUMP SUM. The Borrower shall repay the Borrowed Money as a lump sum, in full, in the amount of \$[AMOUNT] (principal and interest) by [DATE] (“Due Date”).
 
-☐ - INSTALLMENTS. Borrower shall pay principal and interest installment amounts equal to $[AMOUNT] with the first (1st) payment due on [DATE] and the remaining payments to be paid: (check one)
+☐ - INSTALLMENTS. Borrower shall pay principal and interest installment amounts equal to \$[AMOUNT] with the first (1st) payment due on [DATE] and the remaining payments to be paid: (check one)
 
 ☐ - Weekly with any remaining balance payable on [DATE] (“Due Date”).
 

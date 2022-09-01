@@ -2,4 +2,4 @@
 title: Research
 ---
 
-This is the Research page.
+This page contains various DAO related research.

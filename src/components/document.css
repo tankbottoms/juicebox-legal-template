@@ -27,13 +27,13 @@ Tip: find unicode here https://www.compart.com/en/unicode/search
 	margin-right: 20px;
 }
 
-.info {
+#content .info {
 	padding: 10px 25px;
 	background-color: var(--background-l1);
 	border: 1px solid var(--stroke-secondary);
 }
 
-.info p::before {
+#content .info p::before {
 	content: 'ⓘ';
 	color: var(--icon-secondary);
 	font-size: 1.5rem;

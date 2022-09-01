@@ -1,4 +1,9 @@
-# [company-name] ACTION BY WRITTEN CONSENT OF THE MEMBERS OF THE BOARD OF DIRECTORS IN LIEU OF FIRST MEETING
+---
+title: 'Consent of Directors'
+sidebar_position: 6
+---
+
+# [Company-name] ACTION BY WRITTEN CONSENT OF THE MEMBERS OF THE BOARD OF DIRECTORS IN LIEU OF FIRST MEETING
 
 ```
 Note: Common stock value should probably be one cent.
@@ -6,19 +11,19 @@ Note: Common stock value should probably be one cent.
 Note: **Issuance of Common Stock** may need to be made generic across jurisdictions. See bracketed terms. More purchasers can be added to the table (2nd resolution).
 
 Variable terms:
-company-name
-chairman-name
-current-year
-purchaser-name
-shares-number
-share-purchase-price
-common-stock-value
-principal-executive-office-address
-reserved-shares
-date
+Company-name
+Chairman-name
+Current-year
+Purchaser-name
+Shares-number
+Share-purchase-price
+Common-stock-value
+Principal-executive-office-address
+Reserved-shares
+Date
 ```
 
-Pursuant to Sections 108(c) and 141(f) of the Delaware General Corporation Law and the bylaws of [company-name], a Delaware corporation (the "**Company**"), the undersigned, constituting the members of the board of directors of the Company (the "**Board**"), hereby adopt the following resolutions:
+Pursuant to Sections 108(c) and 141(f) of the Delaware General Corporation Law and the bylaws of [Company-name], a Delaware corporation (the "**Company**"), the undersigned, constituting the members of the board of directors of the Company (the "**Board**"), hereby adopt the following resolutions:
 
 ### Ratification of Actions of Sole Incorporator
 
@@ -32,33 +37,33 @@ Pursuant to Sections 108(c) and 141(f) of the Delaware General Corporation Law a
 
 **RESOLVED**: That the Board will initially consist of one (1) member.
 
-**RESOLVED FURTHER**: That [chairman-name] is appointed to serve as the Chairman of the Board, to serve until his respective successor is duly elected and qualified.
+**RESOLVED FURTHER**: That [Chairman-name] is appointed to serve as the Chairman of the Board, to serve until his respective successor is duly elected and qualified.
 
 ### Appointment of Officers
 
 **RESOLVED:** That the following persons are elected as officers of the Company to the offices set forth opposite their respective names, to serve until their respective successors are duly elected and qualified or until any such officer's earlier resignation or removal:
 
-|Position|Individual|
-|-|-|
-|Chief Executive Officer|[individual-1]
-|Treasurer|[individual-2]
-|Secretary|[individual-3]
+| Position                | Individual     |
+| ----------------------- | -------------- |
+| Chief Executive Officer | [Individual-1] |
+| Treasurer               | [Individual-2] |
+| Secretary               | [Individual-3] |
 
 ### Authority of Officers
 
-**RESOLVED**: That, in accordance with the powers of the officers specified in the Company's bylaws, the officers of the Company are authorized to execute and deliver any agreement in the name of the Company and to otherwise obligate the Company with respect to the business of the Company, within general guidelines and budgets approved by the Board; *provided, however,* that the Board may adopt from time to time specific limitations on the authority of such officers.
+**RESOLVED**: That, in accordance with the powers of the officers specified in the Company's bylaws, the officers of the Company are authorized to execute and deliver any agreement in the name of the Company and to otherwise obligate the Company with respect to the business of the Company, within general guidelines and budgets approved by the Board; _provided, however,_ that the Board may adopt from time to time specific limitations on the authority of such officers.
 
 ### Issuance of Common Stock
 
-**RESOLVED**: That the Board determines that the fair market value of the common stock is $[common-stock-value] per share.
+**RESOLVED**: That the Board determines that the fair market value of the common stock is $[Common-stock-value] per share.
 
-**RESOLVED FURTHER**: That the Company is authorized to sell and issue to the following person the number of shares of common stock listed opposite such purchaser's name at a purchase price per share of $[common-stock-value] on the terms and conditions and for the form of consideration set forth in the agreements listed opposite such purchaser's name, which agreement shall be entered into in substantially the form provided to and reviewed by the Board with such changes as may be approved by the officers of the Company, acting on behalf of the Company, with the advice of counsel:
+**RESOLVED FURTHER**: That the Company is authorized to sell and issue to the following person the number of shares of common stock listed opposite such purchaser's name at a purchase price per share of $[Common-stock-value] on the terms and conditions and for the form of consideration set forth in the agreements listed opposite such purchaser's name, which agreement shall be entered into in substantially the form provided to and reviewed by the Board with such changes as may be approved by the officers of the Company, acting on behalf of the Company, with the advice of counsel:
 
-|Name|Number of Shares|Purchase Price|Form of Agreement|
-|-|-|-|-|
-|[purchaser-name]|[shares-number]|[share-purchase-price]|Restricted Stock Purchase Agreement (form attached as **Exhibit A**)|
+| Name             | Number of Shares | Purchase Price         | Form of Agreement                                                    |
+| ---------------- | ---------------- | ---------------------- | -------------------------------------------------------------------- |
+| [Purchaser-name] | [Shares-number]  | [Share-purchase-price] | Restricted Stock Purchase Agreement (form attached as **Exhibit A**) |
 
-**RESOLVED FURTHER**: That the Board determines that the purchase price per share of $[common-stock-value] in consideration for the common stock issued pursuant to the terms and conditions of the above listed agreement constitutes full and adequate consideration for the common stock, and that such shares, when issued in accordance with the terms of such agreement, will be fully-paid and nonassessable outstanding shares of common stock of the Company.
+**RESOLVED FURTHER**: That the Board determines that the purchase price per share of $[Common-stock-value] in consideration for the common stock issued pursuant to the terms and conditions of the above listed agreement constitutes full and adequate consideration for the common stock, and that such shares, when issued in accordance with the terms of such agreement, will be fully-paid and nonassessable outstanding shares of common stock of the Company.
 
 **RESOLVED FURTHER**: That the officers of the Company in consultation with legal counsel are authorized and directed to execute, verify and file all documents, and to take whatever actions, that are necessary or advisable to comply with all state and federal securities laws.
 
@@ -82,12 +87,12 @@ Pursuant to Sections 108(c) and 141(f) of the Delaware General Corporation Law a
 
 **RESOLVED**: That the officers of the Company are authorized to:
 
-> -   designate one or more banks or similar financial institutions as depositories of the funds of the Company;
-> -   open, maintain and close general and special accounts with any such depositories;
-> -   cause to be deposited from time to time in such accounts, funds of the Company as they deem necessary or advisable, and to designate, or to change or revoke the designation of, the officers or agents of the Company authorized to make such deposits and to endorse checks, drafts and other instruments for deposit;
-> -   designate, or to change or revoke the designation of, the officers or agents of the Company authorized to sign or countersign checks, drafts or other orders for the payment of money of the Company against any funds deposited in any of such accounts;
-> -   authorize the use of facsimile signatures for the signing or countersigning of checks, drafts or other orders for the payment of money, and to enter into such agreements as banks and similar financial institutions customarily require as a condition for permitting the use of facsimile signatures; and
-> -   make such general and special rules and regulations with respect to such accounts as they may deem necessary or advisable, and to complete, execute and certify any customary printed blank signature card forms in order to exercise conveniently the authority granted by this resolution, and any resolutions printed on such cards are deemed adopted as a part of this resolution.
+> - designate one or more banks or similar financial institutions as depositories of the funds of the Company;
+> - open, maintain and close general and special accounts with any such depositories;
+> - cause to be deposited from time to time in such accounts, funds of the Company as they deem necessary or advisable, and to designate, or to change or revoke the designation of, the officers or agents of the Company authorized to make such deposits and to endorse checks, drafts and other instruments for deposit;
+> - designate, or to change or revoke the designation of, the officers or agents of the Company authorized to sign or countersign checks, drafts or other orders for the payment of money of the Company against any funds deposited in any of such accounts;
+> - authorize the use of facsimile signatures for the signing or countersigning of checks, drafts or other orders for the payment of money, and to enter into such agreements as banks and similar financial institutions customarily require as a condition for permitting the use of facsimile signatures; and
+> - make such general and special rules and regulations with respect to such accounts as they may deem necessary or advisable, and to complete, execute and certify any customary printed blank signature card forms in order to exercise conveniently the authority granted by this resolution, and any resolutions printed on such cards are deemed adopted as a part of this resolution.
 
 **RESOLVED FURTHER**: That all form resolutions required by any such depository are adopted, and that the Secretary or any Assistant Secretary of the Company is authorized to certify such resolutions as having been adopted by this action by unanimous written consent.
 
@@ -109,7 +114,7 @@ Pursuant to Sections 108(c) and 141(f) of the Delaware General Corporation Law a
 
 ### Principal Executive Office
 
-**RESOLVED**: That the principal executive office of the Company be established and maintained at [principal-executive-office-address]
+**RESOLVED**: That the principal executive office of the Company be established and maintained at [Principal-executive-office-address]
 
 ### Qualifications to do Business
 
@@ -121,11 +126,11 @@ Pursuant to Sections 108(c) and 141(f) of the Delaware General Corporation Law a
 
 **RESOLVED FURTHER:** That the officers of the Company are authorized to direct the responsible attorneys, paralegals and corporate assistants of Kilpatrick Townsend & Stockton LLP, counsel for the Company, to submit on behalf of the Company, an online application for a federal employer identification number on Form SS-4.
 
-### Adoption of [current-year] Equity Incentive Plan and Agreement
+### Adoption of [Current-year] Equity Incentive Plan and Agreement
 
-**RESOLVED:** That the [current-year] Equity Incentive Plan (the "**Plan**") in substantially the form attached hereto as **Exhibit D** is adopted and approved.
+**RESOLVED:** That the [Current-year] Equity Incentive Plan (the "**Plan**") in substantially the form attached hereto as **Exhibit D** is adopted and approved.
 
-**RESOLVED FURTHER:** That the Board reserves [reserved-shares] shares of common stock for issuance under the Plan.
+**RESOLVED FURTHER:** That the Board reserves [Reserved-shares] shares of common stock for issuance under the Plan.
 
 **RESOLVED FURTHER:** That the form of stock option agreement in substantially the form attached hereto as **Exhibit E** is approved.
 
@@ -141,11 +146,11 @@ Pursuant to Sections 108(c) and 141(f) of the Delaware General Corporation Law a
 
 This action by written consent shall be effective as of the date the Company receives the consent of the Company's directors. This action by written consent may be executed in any number of counterparts, each of which shall constitute an original and all of which together shall constitute one action. Any copy, facsimile or other reliable reproduction of this action by written consent may be substituted or used in lieu of the original writing for any and all purposes for which the original writing could be used. This action by written consent shall be filed with the minutes of the proceedings of the board of directors of the Company.
 
-|**The Board:**|
-|-|
-|Signature: `________________________`|
-|[chairman-name], Constituting Board Member|
-|Date: [date]|
+| **The Board:**                             |
+| ------------------------------------------ |
+| Signature: `________________________`      |
+| [Chairman-name], Constituting Board Member |
+| Date: [Date]                               |
 
 ## Exhibit A
 
@@ -163,7 +168,7 @@ This action by written consent shall be effective as of the date the Company rec
 
 ## Exhibit D
 
-[current-year] equity incentive PLAN
+[Current-year] equity incentive PLAN
 
 ## Exhibit E
 

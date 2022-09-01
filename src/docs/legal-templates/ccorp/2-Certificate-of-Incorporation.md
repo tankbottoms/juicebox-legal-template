@@ -1,30 +1,24 @@
-# CERTIFICATE OF INCORPORATION OF [company-name]
+---
+title: 'Incorporate'
+sidebar_position: 1
+---
 
-```
-Variable terms:
-company-name
-registered-office-address
-registered-agent-name
-number-of-shares
-share-par-value
-incorporator-name
-incorporator-address
-date
-```
+# CERTIFICATE OF INCORPORATION OF [Company-name]
 
-The name of the corporation is [company-name] (the "Company").
+The name of the corporation is [Company-name] (the "Company").
 
-The address of the Company's registered office in the State of Delaware is [registered-office-address]. The name of its registered agent at such address is [registered-agent-name]
+The address of the Company's registered office in the State of Delaware is [Registered-office-address]. The name of its registered agent at such address is [Registered-agent-name]
 
 The purpose of the Company is to engage in any lawful act or activity for which corporations may be organized under the Delaware General Corporation Law, as the same exists or as may hereafter be amended from time to time.
 
-This Company is authorized to issue one class of shares to be designated Common Stock. The total number of shares of Common Stock the Company has authority to issue is [number-of-shares] with par value of [share-par-value] per share.
+This Company is authorized to issue one class of shares to be designated Common Stock. The total number of shares of Common Stock the Company has authority to issue is [Number-of-shares] with par value of [Share-par-value] per share.
 
 The name and mailing address of the incorporator are as follows:
 
-**INCORPORATOR**
-[incorporator-name]
-[incorporator-address]
+### **INCORPORATOR**
+
+[Incorporator-name]
+[Incorporator-address]
 
 In furtherance and not in limitation of the powers conferred by statute, the board of directors of the Company is expressly authorized to make, alter, amend or repeal the bylaws of the Company.
 
@@ -42,9 +36,9 @@ A right to indemnification or to advancement of expenses arising under a provisi
 
 Except as provided in **Article VIII** and **Article IX** above, the Company reserves the right to amend, alter, change or repeal any provision contained in this Certificate of Incorporation, in the manner now or hereafter prescribed by statute, and all rights conferred upon stockholders herein are granted subject to this reservation.
 
-I, the undersigned, as the sole incorporator of the Company, have signed this Certificate of Incorporation on [date].
+I, the undersigned, as the sole incorporator of the Company, have signed this Certificate of Incorporation on [Date].
 
-|**INCORPORATOR**:|
-|-|
-|Signature: `________________________`|
-|[incorporator-name]|
+| **INCORPORATOR**:                          |
+| ------------------------------------------ |
+| Signature: `_____________________________` |
+| By:[Incorporator-name]                     |

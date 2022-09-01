@@ -64,6 +64,7 @@ These guiding principles constitute an Agreement (hereinafter the "Agreement") a
 (a) Organizational Expenses. The Company shall bear all of its organizational expenses and costs, and may amortize these expenses for accounting and/or tax purposes.
 
 (b) Operating Expenses.
+
 > - (i) The Company shall bear all costs and expenses relating to its activities, maintenance, and operations, including, without limitation, all fees, expenses, and costs associated (directly or indirectly) with the acquiring, holding, monitoring, managing tokens, including NFTs, software development, including graphic design, frontend, smart contract, auditing and any extraordinary expenses (including, without limitation, litigation-related and indemnification expenses), legal, regulatory, research, consulting, compliance, auditing, accounting, and other professional fees and expenses, the costs of any administrator, the costs of any reporting to Members, expenses of any administrative proceedings undertaken by the applicable Member in its capacity, expenses incurred in connection with the dissolution, liquidation, and termination of the Company, and other expenses related to the Company as determined by the Members by a vote via the Dapp (collectively, and together with organizational expenses, the "Company Expenses").
 > - (ii) Company expenses, costs or other fees shall be allocated to and funded by the Company.
 
@@ -78,6 +79,7 @@ These guiding principles constitute an Agreement (hereinafter the "Agreement") a
 ### Dissolution
 
 (a) General. The Company shall be dissolved and its affairs shall be wound up upon the earliest to occur of:
+
 > - (i) a determination of dissolution by majority vote of the Members; or
 > - (ii) the entry of a decree of judicial dissolution pursuant to the Act or other court of competent jurisdiction.
 
@@ -88,6 +90,7 @@ These guiding principles constitute an Agreement (hereinafter the "Agreement") a
 (a) Transfers. Governance Rights and Tokens are not transferable. Members may vote to allow or disallow the ability of Members to transfer their Governance Rights and/or Tokens by a vote facilitated via the Dapp. Tokens may become freely transferable to Ethereum addresses outside of the Company ("External Addresses") by a vote of the Members. Tokens issued for the purpose of participating in governance by the DApp, or Snapshot, are transferable via "delegation". In the event the Tokens become freely transferable to an External Addresses, each Member agrees that holders of the External Address shall automatically be granted Membership rights within the Company which “new” Members shall be subject to this Agreement.s
 
 (b) Admission of Substituted Members. If the transferee is not already a Member, any transferee of Tokens that were transferred in accordance with the provisions of this Section shall be admitted as a Member. The Company shall not recognize for any purpose any purported transfer of all or any part of a Member's interest or Tokens in the Company, and no purchaser, assignee, transferee, or other recipient of all or any part of such Tokens shall become a Member hereunder unless:
+
 > - (i) Transfer of Tokens. The transferee of Tokens transferred the Tokens pursuant to this Section is admitted to the Company as a transferee Member and shall succeed to the rights and liabilities of the transferor Member with respect to such transferred Tokens.
 > - (ii) Effect of Death, Dissolution, or Bankruptcy of a Member. Upon the death, incompetence, bankruptcy, insolvency, liquidation, or dissolution of a Member, the rights and obligations of that Member under this Agreement shall accrue to that Member's successor(s), estate, or legal representative, and each such Person shall be treated as an unadmitted transferee of that Member's Tokens, as described in the Act.
 

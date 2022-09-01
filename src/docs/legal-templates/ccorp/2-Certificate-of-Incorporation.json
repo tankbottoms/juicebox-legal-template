@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Company-name",
+		"type": "text",
+		"label": "Company Name",
+		"placeholder": "Juicebox Corporation",
+		"value": "Juicebox Corporation"
+	},
+	{
+		"name": "Registered-agent-name",
+		"type": "text",
+		"label": "Registered Agent Name",
+		"placeholder": "Mr. Reggie Agent",
+		"value": "Mr. Reggie Agent"
+	},
+	{
+		"name": "Registered-office-address",
+		"type": "text",
+		"label": "Registered Office Address",
+		"placeholder": "123 Juicy Juicebox Dr.",
+		"value": ""
+	},
+	{
+		"name": "Incorporator-name",
+		"type": "text",
+		"label": "Incorporator Name",
+		"placeholder": "Mr. Incorporator Person",
+		"value": ""
+	},
+
+	{
+		"name": "Incorporator-address",
+		"type": "text",
+		"label": "Incorporator Address",
+		"placeholder": "123 Juicy Juicebox",
+		"value": ""
+	}
+]

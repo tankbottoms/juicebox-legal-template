@@ -1,9 +1,9 @@
 ---
-title: Legal Overview
-sidebar_position: 2
+title: Juicebox Ecosystem
+sidebar_position: 3
 ---
 
-## The Project Owner, Contributor, the Beneficiary
+### The Project Owner, Contributor, the Beneficiary
 
 :::tip
 NONE OF THE INFORMATION, SERVICES OR MATERIALS OFFERED ON OUR SITE CONSTITUTE, AND ARE NOT INTENDED TO CONSTITUTE, LEGAL, FINANCIAL, TAX, INVESTMENT OR OTHER ADVICE, AND YOU SHOULD NOT ACT OR REFRAIN FROM ACTING BASED ON ANY INFORMATION, SERVICES OR MATERIALS PROVIDED ON THIS SITE. ALL CONTENT ON OUR SITE IS INFORMATION OF A GENERAL NATURE AND DOES NOT ADDRESS THE UNIQUE CIRCUMSTANCES OF ANY PARTICULAR USER. YOU ARE STRONGLY URGED TO CONSULT WITH YOUR OWN LEGAL, FINANCIAL, TAX, INVESTMENT AND OTHER ADVISORS AS TO ALL LEGAL, FINANCIAL, TAX AND INVESTMENT-RELATED QUESTIONS YOU HAVE.
@@ -15,8 +15,6 @@ The **Project Owner** is the person who creates the project. The **Contributor**
 
 :::caution
 You **must** not misrepresent the purpose of your treasury. Failure honest about the use of your proceeds is against the Juicebox [Terms of Service](./Juicebox/tos.md).
-
-Juicebox treasuries are transparent funding devices where information asymmetry is enforced by [smart contracts](https://ethereum.org/en/developers/docs/smart-contracts/) on Ethereum. However, the funds eventually are released from the protocol to the **Project Owner**. You, as that **Project Owner**, have a duty of fair dealing.[^2]
 :::
 
 ### Laws
@@ -26,6 +24,10 @@ Common law, also known as case law, is the body of unwritten laws based on legal
 A common concern involves the question of what duties does a **Juicebox Project Owner** owe after creating the Juicebox Project including subsequent promotion. The Juicebox Protocol, once configured operates as a token issuance machine, **Project Token** or Cryptocurrency redemption system, and a general Cryptocurrency inflows and outflows system enforcing the rules the **Project Owner** sets. While the project mechanic is transparent, it has nuances, and the **Project Manager** is responsible for the configurations - the Juicebox Protocol only enforces those settings. As set forth in the **Juicebox's Terms of Service** the application requires the **Project Owner** to ensure any configurations are such that any applicable laws are adhered to, nonetheless, after the **Project Owner** deploys the project, makes statements to the purpose of the project, subsequent actions by **Contributors** such as transmitting Cryptocurrency, anything of value, those collective action, could be interpreted as an agreement forming between the parties.
 
 The basic elements required for the agreement to be a legally enforceable contract are: mutual assent, expressed by a valid offer and acceptance; adequate consideration; capacity; and legality. In some states, element of consideration can be satisfied by a valid substitute. In other words, contracts are promises that the law will enforce.
+
+:::caution
+Juicebox treasuries are transparent funding devices where information asymmetry is enforced by [smart contracts](https://ethereum.org/en/developers/docs/smart-contracts/) on Ethereum. However, the funds eventually are released from the protocol to the **Project Owner**. You, as that **Project Owner**, have a duty of fair dealing.[^2]
+:::
 
 ### Contracts
 
@@ -79,13 +81,8 @@ As highlighted above generally there are several factors of the association whic
 - Do the participants (project owner, members, contributors) have an expectation of profit?
 
 [^1]: When parties of a contract, including verbal contract enter into an agreement, each party has a **duty**, for the **Project Owner** it is performance, for the **Contributor** it is to pay. The **Project Owner** failure to perform, or performing an activity incongruent with the aforementioned agreement may cause a breach of the contract.
-
 [^2]: Implied covenant of good faith and fair dealing (often simplified to good faith) is a rule used by most courts in the United States that requires every party in a contract to implement the agreement as intended, not using means to undercut the purpose of the transaction., https://www.law.cornell.edu/wex/implied_covenant_of_good_faith_and_fair_dealing
-
 [^3]: Fund raising or aggregating capital for the purpose of profit seeking involves regulatory scrutiny, depending on your circumstances, start-up, investment club, you may need to seek guidance from legal counsel. [The Securities and Exchange Commission] provides guidance on this specific topic of an investment club.(https://www.sec.gov/reportspubs/investor-publications/investorpubsinvclubhtm.html)
-
 [^4]: https://www.law.cornell.edu/wex/legal_duty#:~:text=A%20legal%20duty%20is%20an,whom%20this%20duty%20is%20owed.
-
 [^5]: https://en.wikipedia.org/wiki/Duty
-
 [^6]: Types of Business Entities, Priyanka Prakash
