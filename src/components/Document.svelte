@@ -2,6 +2,7 @@
 	import { writable } from 'svelte/store';
 	import IconCaret from './Icons/IconCaret.svelte';
 	import './document.css';
+	import IconDoubleCaret from './Icons/IconDoubleCaret.svelte';
 
 	export let path: string;
 	export let sectionRef: HTMLElement;
@@ -17,6 +18,14 @@
 
 	function scrollUp() {
 		sectionRef.scrollTop -= window.innerHeight - 100;
+	}
+
+	function scrollToBottom() {
+		sectionRef.scrollTop = sectionRef.scrollHeight;
+	}
+
+	function scrollToTop() {
+		sectionRef.scrollTop = 0;
 	}
 
 	async function loadData(path: string) {
@@ -89,12 +98,18 @@
 	{/if}
 	<footer>
 		{#if sectionRef?.scrollTop > 100}
+			<span on:click={scrollToTop}>
+				<IconDoubleCaret circle width="17" height="17" />
+			</span>
 			<span on:click={scrollUp}>
-				<IconCaret transform="rotate(180)" />
+				<IconCaret circle transform="rotate(180)" />
 			</span>
 		{/if}
 		<span on:click={scrollDown}>
-			<IconCaret />
+			<IconCaret circle />
+		</span>
+		<span on:click={scrollToBottom}>
+			<IconDoubleCaret circle width="17" height="17" transform="rotate(180)" />
 		</span>
 	</footer>
 </article>
@@ -113,9 +128,9 @@
 		background-color: var(--background-l1);
 	}
 
-    footer span {
-        margin: 0 0.5rem;
-    }
+	footer span {
+		margin: 0 0.5rem;
+	}
 
 	#content {
 		max-width: 850px;

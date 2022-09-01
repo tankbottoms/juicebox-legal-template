@@ -7,7 +7,7 @@
 		<slot name="left" />
 	</section>
 	<section bind:this={rightRef}>
-		<slot name="right" {rightRef} dog="bla" />
+		<slot name="right" {rightRef} />
 	</section>
 </main>
 
