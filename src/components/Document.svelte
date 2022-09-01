@@ -1,15 +1,15 @@
 <script lang="ts">
 	import { writable } from 'svelte/store';
 	import IconCaret from './Icons/IconCaret.svelte';
-	import './document.css';
 	import IconDoubleCaret from './Icons/IconDoubleCaret.svelte';
+	import './document.css';
+	import { documentRef } from '$stores';
 
 	export let path: string;
 	export let sectionRef: HTMLElement;
 	let rendered: any;
 	let metadata: any;
 	let variables: any;
-	let contentRef: any;
 
 	function scrollDown() {
 		sectionRef.scrollTop += window.innerHeight - 100;
@@ -28,6 +28,7 @@
 	}
 
 	async function loadData(path: string) {
+		rendered = null;
 		// NOTE: The dynamic import *must* have an extension, otherwise it won't load.
 		// Keep this in mind for svx files, i.e. mixed svelte and markdown.
 		const pathWithoutExtension = path.replace(/\.[^/.]+$/, '');
@@ -72,10 +73,10 @@
 
 	async function updateVariables() {
 		await resetDocument();
-		if (contentRef) {
+		if ($documentRef) {
 			$variables.forEach((variable: any) => {
 				if (variable.default) {
-					contentRef.innerHTML = contentRef.innerHTML.replace(
+					$documentRef.innerHTML = $documentRef.innerHTML.replace(
 						new RegExp(`\\[${variable.name}\\]`, 'g'),
 						variable.default
 					);
@@ -86,32 +87,35 @@
 
 	$: {
 		loadData(path);
+		console.log(path);
 	}
 </script>
 
-<article bind:this={contentRef}>
+<article bind:this={$documentRef}>
 	{#if rendered}
 		<div id="content">
 			<svelte:component this={rendered} />
 		</div>
 	{/if}
 </article>
-<footer>
-	{#if sectionRef?.scrollTop > 100}
-		<span on:click={scrollToTop}>
-			<IconDoubleCaret circle width="17" height="17" />
+{#if rendered && sectionRef?.scrollHeight > window?.innerHeight}
+	<footer>
+		{#if sectionRef?.scrollTop > 100}
+			<span on:click={scrollToTop}>
+				<IconDoubleCaret circle width="17" height="17" />
+			</span>
+			<span on:click={scrollUp}>
+				<IconCaret circle transform="rotate(180)" />
+			</span>
+		{/if}
+		<span on:click={scrollDown}>
+			<IconCaret circle />
 		</span>
-		<span on:click={scrollUp}>
-			<IconCaret circle transform="rotate(180)" />
+		<span on:click={scrollToBottom}>
+			<IconDoubleCaret circle width="17" height="17" transform="rotate(180)" />
 		</span>
-	{/if}
-	<span on:click={scrollDown}>
-		<IconCaret circle />
-	</span>
-	<span on:click={scrollToBottom}>
-		<IconDoubleCaret circle width="17" height="17" transform="rotate(180)" />
-	</span>
-</footer>
+	</footer>
+{/if}
 
 <style>
 	article {
