@@ -9,6 +9,7 @@
 	import docs from '../docs.json';
 
 	let documents = [];
+	let current;
 
 	function getWorkflowData(workflow) {
 		const paths = workflows[workflow];
@@ -32,6 +33,7 @@
 			}
 		}
 		documents = pathData;
+		current = documents?.[0];
 	}
 
 	onMount(() => {
@@ -41,11 +43,13 @@
 
 <SplitView>
 	<div slot="left">
-		<LeftPanel tabs={documents} />
+		<LeftPanel tabs={documents} setCurrent={(newCurrent) => (current = newCurrent)} />
 	</div>
 	<div slot="right" let:rightRef>
 		<h1>Preview</h1>
-		<Document path="/legal-templates/llcs/op-llc-series.md" sectionRef={rightRef} />
+		{#if current}
+			<Document path={current?.path} sectionRef={rightRef} />
+		{/if}
 	</div>
 </SplitView>
 
