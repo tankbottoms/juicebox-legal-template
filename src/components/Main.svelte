@@ -9,7 +9,7 @@
 
 	$: {
 		path = $page.params.catchall;
-		isReadme = path.endsWith('README.md');
+		isReadme = path?.endsWith('README.md');
 	}
 </script>
 

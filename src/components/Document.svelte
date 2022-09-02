@@ -1,21 +1,21 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import IconCaret from './Icons/IconCaret.svelte';
 	import IconDoubleCaret from './Icons/IconDoubleCaret.svelte';
-	import { documentRef } from '$stores';
+	import { component, documentRef, metadata } from '$stores';
 	import './document.css';
 
-	export let showTitle = false;
 	export let path: string;
+	export let showTitle = false;
 	export let sectionRef: HTMLElement;
-	let metadata: any;
-	let rendered: any;
+	let innerHeight: number;
 
 	function scrollDown() {
-		sectionRef.scrollTop += window.innerHeight - 100;
+		sectionRef.scrollTop += innerHeight - 100;
 	}
 
 	function scrollUp() {
-		sectionRef.scrollTop -= window.innerHeight - 100;
+		sectionRef.scrollTop -= innerHeight - 100;
 	}
 
 	function scrollToBottom() {
@@ -27,8 +27,6 @@
 	}
 
 	async function loadData(path: string) {
-		// NOTE: The dynamic import *must* have an extension, otherwise it won't load.
-		// Keep this in mind for svx files, i.e. mixed svelte and markdown.
 		const pathWithoutExtension = path.replace(/\.[^/.]+$/, '');
 		const globs = import.meta.glob('../docs/**/*.{md,svx}');
 		// NOTE: this worked locally await import('..docs/' + pathWithoutExtension + '.md');
@@ -37,15 +35,15 @@
 		let imported: any;
 		try {
 			imported = await globs?.[`../docs/${pathWithoutExtension}.md`]();
-			metadata = imported.metadata || {};
-			rendered = imported.default;
+			metadata.set(imported.metadata || {});
+			component.set(imported.default);
 		} catch (e) {
 			console.info('No markdown file found for ' + pathWithoutExtension);
 		}
 	}
 
 	async function resetDocument() {
-		rendered = undefined;
+		$component = undefined;
 		const pathWithoutExtension = path.replace(/\.[^/.]+$/, '');
 		const globs = import.meta.glob('../docs/**/*.{md,svx,json}');
 		// NOTE: this worked locally await import('..docs/' + pathWithoutExtension + '.md');
@@ -57,29 +55,27 @@
 		} catch (e) {
 			console.log(e);
 		}
-		rendered = imported.default;
-	}
-
-	$: {
-		loadData(path);
+		$component = imported.default;
 	}
 </script>
 
+<svelte:window bind:innerHeight />
+
 {#if showTitle}
-	{#if metadata?.title}
-		<h1 class="title">{metadata?.title}</h1>
+	{#if $metadata?.title}
+		<h1 class="title">{$metadata?.title}</h1>
 	{/if}
 {:else}
 	<h1>Preview</h1>
 {/if}
 <article bind:this={$documentRef}>
 	<div id="content">
-		{#if rendered}
-			<svelte:component this={rendered} />
+		{#if $component}
+			<svelte:component this={$component} />
 		{/if}
 	</div>
 </article>
-{#if rendered && sectionRef?.scrollHeight > window?.innerHeight}
+{#if $component && sectionRef?.scrollHeight > innerHeight}
 	<footer>
 		{#if sectionRef?.scrollTop > 100}
 			<span on:click={scrollToTop}>

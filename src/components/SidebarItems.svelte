@@ -26,8 +26,8 @@
 		>{item.label ? item.label : getPresentable(item.leaf)}</a
 	>
 {:else}
-	<details open={$page.params.catchall.includes(item.path)}>
-		<summary class:active={$page.params.catchall.includes(item.path)}>
+	<details open={$page.params.catchall?.includes(item.path)}>
+		<summary class:active={$page.params.catchall?.includes(item.path)}>
 			{#if item.hasRootDoc}
 				<a href="/{path}/{item.path}/README.md" on:click|stopPropagation>{item.label}</a>
 			{:else}

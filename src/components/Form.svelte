@@ -3,10 +3,12 @@
 	import { writable } from 'svelte/store';
 	import Button from './Button.svelte';
 	import Input from './Input.svelte';
-	import { variables, documentRef } from '$stores';
+	import { page } from '$app/stores';
+	import { variables, documentRef, setCurrentDocumentFromPath } from '$stores';
 
 	export let path: string;
 	let localVariables: any;
+	let showReset = false;
 
 	async function loadData(path: string) {
 		// NOTE: The dynamic import *must* have an extension, otherwise it won't load.
@@ -27,6 +29,7 @@
 	}
 
 	async function updateVariables() {
+		showReset = true;
 		$localVariables.forEach((variable: any) => {
 			if (variable.default) {
 				$documentRef.innerHTML = $documentRef.innerHTML.replace(
@@ -35,6 +38,12 @@
 				);
 			}
 		});
+	}
+
+	async function reset() {
+		// await setCurrentDocumentFromPath($page);
+		// Reload page to reset the document.
+		window.location.reload();
 	}
 
 	function save() {
@@ -65,6 +74,9 @@
 			/>
 		{/each}
 		<div class="buttons">
+			{#if showReset}
+				<Button type="tertiary" on:click={reset}>Reset</Button>
+			{/if}
 			<Button type="secondary" on:click={updateVariables}>Preview</Button>
 			<Button type="primary" on:click={save}>Save as PDF</Button>
 		</div>
@@ -74,6 +86,11 @@
 {/if}
 
 <style>
+	.buttons {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
 	.variables {
 		display: flex;
 		flex-direction: column;
