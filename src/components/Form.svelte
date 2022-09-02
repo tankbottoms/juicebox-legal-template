@@ -3,8 +3,7 @@
 	import { writable } from 'svelte/store';
 	import Button from './Button.svelte';
 	import Input from './Input.svelte';
-	import { page } from '$app/stores';
-	import { variables, documentRef, setCurrentDocumentFromPath } from '$stores';
+	import { variables, documentRef } from '$stores';
 
 	export let path: string;
 	let localVariables: any;

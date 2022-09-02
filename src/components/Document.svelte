@@ -1,8 +1,27 @@
+<script lang="ts" context="module">
+	import { component, documentRef, metadata } from '$stores';
+
+	export async function setCurrentDocumentFromPath(path: string) {
+		if (path) {
+			const pathWithoutExtension = path.replace(/\.[^/.]+$/, '');
+			const globs = import.meta.glob('../docs/**/*.{md,svx}');
+
+			let imported: any;
+			component.set(null);
+			try {
+				imported = await globs?.[`../docs/${pathWithoutExtension}.md`]();
+				metadata.set(imported.metadata || {});
+				component.set(imported.default);
+			} catch (e) {
+				console.info('No markdown file found for ' + pathWithoutExtension);
+			}
+		}
+	}
+</script>
+
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import IconCaret from './Icons/IconCaret.svelte';
 	import IconDoubleCaret from './Icons/IconDoubleCaret.svelte';
-	import { component, documentRef, metadata } from '$stores';
 	import './document.css';
 
 	export let path: string;
@@ -26,36 +45,8 @@
 		sectionRef.scrollTop = 0;
 	}
 
-	async function loadData(path: string) {
-		const pathWithoutExtension = path.replace(/\.[^/.]+$/, '');
-		const globs = import.meta.glob('../docs/**/*.{md,svx}');
-		// NOTE: this worked locally await import('..docs/' + pathWithoutExtension + '.md');
-		// not below i.e. the string literal, but above, the import.meta.glob - works in production.
-		// Looks insane.
-		let imported: any;
-		try {
-			imported = await globs?.[`../docs/${pathWithoutExtension}.md`]();
-			metadata.set(imported.metadata || {});
-			component.set(imported.default);
-		} catch (e) {
-			console.info('No markdown file found for ' + pathWithoutExtension);
-		}
-	}
-
-	async function resetDocument() {
-		$component = undefined;
-		const pathWithoutExtension = path.replace(/\.[^/.]+$/, '');
-		const globs = import.meta.glob('../docs/**/*.{md,svx,json}');
-		// NOTE: this worked locally await import('..docs/' + pathWithoutExtension + '.md');
-		// not below i.e. the string literal, but above, the import.meta.glob - works in production.
-		// Looks insane.
-		let imported: any;
-		try {
-			imported = await globs?.[`../docs/${pathWithoutExtension}.md`]();
-		} catch (e) {
-			console.log(e);
-		}
-		$component = imported.default;
+	$: {
+		setCurrentDocumentFromPath(path);
 	}
 </script>
 
