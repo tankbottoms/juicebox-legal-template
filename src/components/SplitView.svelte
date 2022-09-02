@@ -1,12 +1,23 @@
 <script lang="ts">
+	import IconCaret from '$components/Icons/IconCaret.svelte';
+
 	export let rightFullWidth = false;
 	let rightRef: HTMLElement;
+
+	function toggleRightFullWidth() {
+		rightFullWidth = !rightFullWidth;
+	}
 </script>
 
 <main>
 	<section class:collapse={rightFullWidth}>
 		<slot name="left" />
 	</section>
+	<div class="border" on:click={toggleRightFullWidth}>
+		<div class="icon">
+			<IconCaret transform={rightFullWidth ? 'rotate(270)' : 'rotate(90)'} circle />
+		</div>
+	</div>
 	<section bind:this={rightRef} class:full={rightFullWidth}>
 		<slot name="right" {rightRef} />
 	</section>
@@ -32,14 +43,22 @@
 	}
 
 	section:last-of-type {
-		flex: 0 0 55%;
-		max-width: 55%;
+		flex: 0 0 calc(55% - 18px);
+		max-width: calc(55% - 18px);
 		border-left: 1px solid rgba(0, 0, 0, 0.094);
 	}
 
 	section.full {
 		flex: 0 0 100%;
 		max-width: 100%;
+	}
+
+	.border {
+		display: flex;
+		flex: 0 0 18px;
+		max-width: 18px;
+		align-items: center;
+		background-color: var(--background-l1);
 	}
 
 	.collapse {
