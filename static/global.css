@@ -193,3 +193,16 @@ h2,
 h3 {
 	color: var(--text-header);
 }
+
+::-webkit-scrollbar {
+	width: 8px; /* Mostly for vertical scrollbars */
+	height: 8px; /* Mostly for horizontal scrollbars */
+}
+::-webkit-scrollbar-thumb {
+	/* Foreground */
+	background: var(--text-tertiary);
+}
+::-webkit-scrollbar-track {
+	/* Background */
+	background: var(--background-l1);
+}

@@ -26,13 +26,13 @@
 	}
 
 	section:first-of-type {
-		flex: 0 0 50%;
-		max-width: 50%;
+		flex: 0 0 45%;
+		max-width: 45%;
 	}
 
 	section:last-of-type {
-		flex: 0 0 50%;
-		max-width: 50%;
+		flex: 0 0 55%;
+		max-width: 55%;
 		border-left: 1px solid rgba(0, 0, 0, 0.094);
 	}
 

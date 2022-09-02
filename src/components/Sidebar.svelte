@@ -37,9 +37,9 @@
 		width: 300px;
 		border-right: 1px solid #eaeaea;
 		position: sticky;
-		top: 60px;
 		align-self: start;
-		height: calc(100vh - 5rem);
+		height: calc(100vh - 20px);
+        overflow: auto;
 	}
 
 	nav.side ul {
@@ -49,9 +49,5 @@
 
 	nav.side li {
 		margin: 1rem 0;
-	}
-
-	nav.side.hidden {
-		display: none;
 	}
 </style>
