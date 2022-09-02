@@ -14,7 +14,6 @@
 <style>
 	main {
 		box-sizing: border-box;
-		margin-bottom: 40px;
 		display: flex;
 		width: 100vw;
 		height: 100vh;
@@ -22,8 +21,8 @@
 	}
 
 	section {
-		margin-top: 2rem;
 		overflow: auto;
+		max-height: calc(100vh - 25px);
 	}
 
 	section:first-of-type {

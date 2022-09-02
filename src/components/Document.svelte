@@ -2,15 +2,13 @@
 	import { writable } from 'svelte/store';
 	import IconCaret from './Icons/IconCaret.svelte';
 	import IconDoubleCaret from './Icons/IconDoubleCaret.svelte';
-	import './document.css';
 	import { documentRef } from '$stores';
-	import Comp from './Comp.svelte';
+	import './document.css';
 
 	export let path: string;
 	export let sectionRef: HTMLElement;
 	let rendered: any;
 	let renders = 0;
-	let metadata: any;
 	let variables: any;
 
 	function scrollDown() {
@@ -56,15 +54,7 @@
 	}
 
 	async function resetDocument() {
-		// We have to manually remove the previous rendered component if we've updated the variables, otherwise... it just doesn't work. Fuck.
-		// if (rendered) {
-		// 	document.getElementById('content')?.remove();
-		// 	const content = document.createElement('div');
-		// 	content.id = 'content';
-		// 	$documentRef?.appendChild(content);
-		// }
 		rendered = undefined;
-		renders += 1;
 		const pathWithoutExtension = path.replace(/\.[^/.]+$/, '');
 		const globs = import.meta.glob('../docs/**/*.{md,svx,json}');
 		// NOTE: this worked locally await import('..docs/' + pathWithoutExtension + '.md');
@@ -79,38 +69,20 @@
 		rendered = imported.default;
 	}
 
-	async function updateVariables() {
-		await resetDocument();
-		if ($documentRef) {
-			$variables.forEach((variable: any) => {
-				if (variable.default) {
-					$documentRef.innerHTML = $documentRef.innerHTML.replace(
-						new RegExp(`\\[${variable.name}\\]`, 'g'),
-						variable.default
-					);
-				}
-			});
-		}
-	}
-
 	$: {
-		// TODO: This just doesn't work after we interpolate the variables.
-		rendered = undefined;
-		resetDocument();
 		loadData(path);
-		console.log(path);
 	}
 </script>
 
 <article bind:this={$documentRef}>
 	<div id="content">
 		{#if rendered}
-			<Comp render={rendered} unique={renders} />
+			<svelte:component this={rendered} />
 		{/if}
 	</div>
 </article>
-<footer>
-	{#if rendered && sectionRef?.scrollHeight > window?.innerHeight}
+{#if rendered && sectionRef?.scrollHeight > window?.innerHeight}
+	<footer>
 		{#if sectionRef?.scrollTop > 100}
 			<span on:click={scrollToTop}>
 				<IconDoubleCaret circle width="17" height="17" />
@@ -125,8 +97,8 @@
 		<span on:click={scrollToBottom}>
 			<IconDoubleCaret circle width="17" height="17" transform="rotate(180)" />
 		</span>
-	{/if}
-</footer>
+	</footer>
+{/if}
 
 <style>
 	article {

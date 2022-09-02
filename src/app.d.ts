@@ -3,6 +3,22 @@
 // and what to do when importing types
 declare namespace App {
 	// interface Locals {}
-	// interface PageData {}
 	// interface Platform {}
+	// interface PrivateEnv {}
+	// interface PublicEnv {}
 }
+
+export type Leaf = {
+	leaf: string;
+	position: number;
+	label: string;
+};
+
+export type RouteItem = {
+	label: string;
+	position: number;
+	items?: RouteItem[];
+	hasRootDoc?: boolean;
+	path?: string;
+	leaves?: Leaf[];
+};
