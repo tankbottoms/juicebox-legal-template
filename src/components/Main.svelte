@@ -13,7 +13,7 @@
 	}
 </script>
 
-<SplitView rightFullWidth={isReadme}>
+<SplitView rightFullWidth={isReadme} showActions={!isReadme}>
 	<div slot="left">
 		<LeftPanel {path} />
 	</div>

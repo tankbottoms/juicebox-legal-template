@@ -69,6 +69,8 @@
 			<Button type="primary" on:click={save}>Save as PDF</Button>
 		</div>
 	</div>
+{:else}
+	<p>This page hasn't been prepared to update variables, <i>yet.</i></p>
 {/if}
 
 <style>

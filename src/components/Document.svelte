@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { writable } from 'svelte/store';
 	import IconCaret from './Icons/IconCaret.svelte';
 	import IconDoubleCaret from './Icons/IconDoubleCaret.svelte';
 	import { documentRef } from '$stores';
