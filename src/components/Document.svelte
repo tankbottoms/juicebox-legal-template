@@ -5,11 +5,11 @@
 	import { documentRef } from '$stores';
 	import './document.css';
 
+	export let showTitle = false;
 	export let path: string;
 	export let sectionRef: HTMLElement;
+	let metadata: any;
 	let rendered: any;
-	let renders = 0;
-	let variables: any;
 
 	function scrollDown() {
 		sectionRef.scrollTop += window.innerHeight - 100;
@@ -36,20 +36,12 @@
 		// not below i.e. the string literal, but above, the import.meta.glob - works in production.
 		// Looks insane.
 		let imported: any;
-		let importedVariables: any;
 		try {
 			imported = await globs?.[`../docs/${pathWithoutExtension}.md`]();
+			metadata = imported.metadata || {};
 			rendered = imported.default;
 		} catch (e) {
 			console.info('No markdown file found for ' + pathWithoutExtension);
-		}
-		try {
-			importedVariables = await globs?.[`../docs/${pathWithoutExtension}.json`]();
-			metadata = imported.metadata || {};
-			// TODO: add a value key to the importedVariables object.
-			variables = writable(importedVariables.default);
-		} catch (e) {
-			// console.info('No variables found for this page.');
 		}
 	}
 
@@ -74,6 +66,13 @@
 	}
 </script>
 
+{#if showTitle}
+	{#if metadata?.title}
+		<h1 class="title">{metadata?.title}</h1>
+	{/if}
+{:else}
+	<h1>Preview</h1>
+{/if}
 <article bind:this={$documentRef}>
 	<div id="content">
 		{#if rendered}
@@ -105,6 +104,9 @@
 		position: relative;
 	}
 
+	h1 {
+		padding: 0rem 2rem;
+	}
 	footer {
 		position: sticky;
 		bottom: 0;

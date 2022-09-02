@@ -5,9 +5,8 @@
 	import Input from './Input.svelte';
 	import { variables, documentRef } from '$stores';
 
-	export let path;
-	export let name;
-	let localVariables;
+	export let path: string;
+	let localVariables: any;
 
 	async function loadData(path: string) {
 		// NOTE: The dynamic import *must* have an extension, otherwise it won't load.

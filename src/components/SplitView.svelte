@@ -1,12 +1,13 @@
 <script lang="ts">
+	export let rightFullWidth = false;
 	let rightRef: HTMLElement;
 </script>
 
 <main>
-	<section>
+	<section class:collapse={rightFullWidth}>
 		<slot name="left" />
 	</section>
-	<section bind:this={rightRef}>
+	<section bind:this={rightRef} class:full={rightFullWidth}>
 		<slot name="right" {rightRef} />
 	</section>
 </main>
@@ -34,6 +35,15 @@
 		flex: 0 0 55%;
 		max-width: 55%;
 		border-left: 1px solid rgba(0, 0, 0, 0.094);
+	}
+
+	section.full {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.collapse {
+		display: none;
 	}
 
 	@media (max-width: 850px) {

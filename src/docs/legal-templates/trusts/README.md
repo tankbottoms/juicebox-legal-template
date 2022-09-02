@@ -2,8 +2,6 @@
 title: Trusts
 ---
 
-# Trusts
-
 A trust is a fiduciary relationship in which one party, known as the trustor, gives another party, the trustee, the right to hold title to property or assets for the benefit of a third party, the beneficiary. Other names for trustor are settler, or donor. A beneficiary is the person, people, or organization which is to receive the benefit, administered by the trustee. Trusts are established to provide legal protection for the trustor's assets, to make sure they are distributed according to the wishes of the trustors, to save time, reduce paperwork, avoid or reduce inheritance or estate taxes, shield assets from 3rd parties, etc.
 
 Trusts are very versatile legal devices, in particular there are six broad categories living and testamentary, funded or unfunded, revocable or irrevocable.
